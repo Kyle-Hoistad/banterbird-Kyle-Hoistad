@@ -1,5 +1,41 @@
 [
     {
+        "username": "Ben Dover",
+        "message": "I'm bantering it"
+    },
+    {
+        "username": "Ben Dover",
+        "message": "banter"
+    },
+    {
+        "username": "Ben Dover",
+        "message": "I'm bantering it"
+    },
+    {
+        "username": "admin",
+        "message": "banter"
+    },
+    {
+        "username": "admin",
+        "message": "banter"
+    },
+    {
+        "username": "admin",
+        "message": "banter"
+    },
+    {
+        "username": "admin",
+        "message": "banter"
+    },
+    {
+        "username": "admin",
+        "message": "banter"
+    },
+    {
+        "username": "admin",
+        "message": "banter"
+    },
+    {
         "username": "admin",
         "message": "Welcome to Banterbird!"
     },
@@ -9,6 +45,6 @@
     },
     {
         "username": "bob",
-        "message": "Just joined. Let’s banter!"
+        "message": "Just joined. Let's banter!"
     }
 ]

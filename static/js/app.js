@@ -1,4 +1,4 @@
-const username = "admin";
+const username = "Ben Dover";
 
 function renderPost(post) {
     const template = document.getElementById("post-template").content.cloneNode(true);
@@ -9,13 +9,27 @@ function renderPost(post) {
 
 function submitPost() {
     const message = document.getElementById("postInput").value;
-    console.log("Would post:", message);
-    alert("Banter bantered (not really yet)");
+    try {
+        const response = fetch("/api/banter", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                username: username,
+                message: message,
+            }),
+        });
+
+    } catch (error) {
+        console.error("Post failed ☠️☠️☠️☆*: .｡. o(≧▽≦)o .｡.:*☆ o(≧口≦)o o((>ω< ))o ヽ（≧□≦）ノ I'M FUCKING TWEAKING", error)
+    }
+    location.reload()
 }
 
 window.onload = async () => {
     try {
-        const response = await fetch("/api/posts")
+        const response = await fetch("/api/posts");
         const posts = await response.json();
         posts.forEach((posts) => {
             renderPost(posts);
