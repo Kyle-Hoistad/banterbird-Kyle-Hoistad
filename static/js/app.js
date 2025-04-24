@@ -1,4 +1,4 @@
-const username = "Ben Dover";
+const username = "Jimmy Johnson";
 
 function renderPost(post) {
     const template = document.getElementById("post-template").content.cloneNode(true);
@@ -22,7 +22,7 @@ function submitPost() {
         });
 
     } catch (error) {
-        console.error("Post failed ☠️☠️☠️☆*: .｡. o(≧▽≦)o .｡.:*☆ o(≧口≦)o o((>ω< ))o ヽ（≧□≦）ノ I'M FUCKING TWEAKING", error)
+        console.error("Post failed ☠️☠️☠️ ☆*: .｡. o(≧▽≦)o .｡.:*☆ o(≧口≦)o o((>ω< ))o ヽ（≧□≦）ノ ☠️☠️☠️ ╰(*°▽°*)╯ ╰(*°▽°*)╯", error)
     }
     location.reload()
 }
