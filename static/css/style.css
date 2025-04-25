@@ -1,0 +1,25 @@
+/* style.css */
+
+body {
+    font-family: sans-serif;
+    background-color: #6198ea;
+    padding: 20px;
+}
+
+#feed {
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 2px solid #000000
+    
+
+}
+
+#postInput {
+    border-radius: 10px;
+    border: 2px solid #000000
+}
+h1 {
+    font-family: 'Monsieur La Doulaise', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+}
