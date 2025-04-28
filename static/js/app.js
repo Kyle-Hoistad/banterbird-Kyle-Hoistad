@@ -39,5 +39,4 @@ window.onload = async () => {
     } catch (error) { 
         console.error("FIXXX ITTT", error); 
     }
-    
 };
