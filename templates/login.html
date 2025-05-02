@@ -1,47 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Login</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="/static/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tac+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+        <title>Login</title>
     </head>
-    
-    <body>
-        <div id="Userlogin" class="bebas-neue-regular">
-        <!-- <h1> formats text to be large and bold, it is bigger than any other
-        heading tag -->
-        <h1 id="Usertitle">User Login</h1>
-        <!-- <hr> makes a horizontal line across the page -->
-        <hr>
-        <!-- <label> displays a lable associated with the entry box -->
-        <label>Username: </label>
-        <br>
-        <!-- <input> lets the computer know you're making an input action,
-        and type="text" lets the computer know that the input is a text input -->
-        <input type="text">
-        <!-- <br> makes a line break for spacing purposes -->
-        <br>
-        <br>
-        <label>Password: </label>
-        <br>
-        <!-- type="password" formats the text box so that any character entered
-        is automatically changed to a dot to protect the password -->
-        <input type="password">
-        <br>
-        <br>
-        <!-- type="button" creates a button to click on the page and
-        value="" creates the text display as part of the button -->
-        <!-- <a> creates a hyperlink and href is what gives the 
-        hyperlink a destination -->
-        <input onclick = "userLogin()" type="button" value="Login">
-        <br>
-        <br>
-        No account?
-        <br>
-        <a href="createaccount.html"><input type="button" value="Create Account"></a>
-        </div>
-        <script src="script.js"></script>
-    </body>
+    <input id="usernameInput" placeholder="Enter Username"/>
+    <button onclick="login()">Login</button>
+    <script>
+        function login() {
+            const username = document.getElementById('usernameInput').value;
+            if (username.length > 0) {
+                localStorage.setItem('username', username);
+                window.location.href = '/';
+            }
+            else {
+                alert("Enter a username, pwease! 🥺🥺🥺")
+            }
+        }
+    </script>
 </html>

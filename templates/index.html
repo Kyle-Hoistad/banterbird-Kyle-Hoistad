@@ -13,10 +13,10 @@
 <body>
     <h1>Banterbird, perhaps Banter-Drooling-Feral-Hog</h1>
     <div>
-        Logged in as: <strong id="username">Jimmy Johnson</strong>
+        Logged in as: <strong id="username">unknown</strong>
         <br>
         <br>
-        <a href="login.html"><input type="button" value="Login"></a>
+        <a href="/login"><input type="button" value="Login"></a>
         <button onclick="submitPost()">Banter-Drooling-Feral-Hog</button>
     </div>
     <div>
@@ -36,5 +36,8 @@
             <hr>
         </div>
     </template>
+    <script>
+        document.getElementById("username").innerText = localStorage.getItem("username");
+    </script>
 </body>
 </html>
