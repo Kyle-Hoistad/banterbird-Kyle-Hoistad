@@ -11,6 +11,14 @@ def index():
 def login():
     return render_template("login.html")
 
+@app.route('/hog')
+def hog():
+    return render_template("hog.html")
+
+@app.route('/mammoth')
+def mammoth():
+    return render_template("mammoth.html")
+
 @app.route('/api/posts')
 def get_posts():
     with open("posts.json", 'r') as file:

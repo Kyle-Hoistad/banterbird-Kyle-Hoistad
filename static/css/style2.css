@@ -2,7 +2,7 @@
 
 body {
     font-family: sans-serif;
-    background-color: #6198ea;
+    background-color: #5f4519;
     padding: 20px;
 }
 
@@ -22,8 +22,4 @@ h1 {
     font-family: 'Monsieur La Doulaise', serif;
     font-size: 48px;
     text-shadow: 4px 4px 4px #aaa;
-}
-
-#hog {
-    background-color: #4e2e12;
 }
